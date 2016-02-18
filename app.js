@@ -3,11 +3,12 @@ $(function(){
 		var count = 0;
 		var innerCount = 0;
 		var titlesPerRow = 3;
+		var numberOfArticle = 12;
 		var bootSize = (6/titlesPerRow).toString();
 		
 		
 
-		for(var i = 0; i<10 ; i++){
+		for(var i = 0; i<numberOfArticle ; i++){
 			if (count % titlesPerRow ===0 || count === 0) {
 				innerCount += 1;
 			};
