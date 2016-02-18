@@ -1,6 +1,4 @@
 $(function(){  	
-
-	function(){
 		
 		$.get('https://www.reddit.com/r/aww/.json', function(content){
 
@@ -32,19 +30,18 @@ $(function(){
 				var articleImage = $("<img class='damageControl' />").attr('src', thumbnail);
 
 
-					var divCreation1 = $('<div class="col-xs-'+ bootSize+ '"></div>').html(articleImage);
-					var divCreation2 = $('<div class="col-xs-'+ bootSize+ '"></div>').html([articleTitle, tally]);
+					var divCreation1 = $('<div class="col-xs-12 col-md-2"></div>').html(articleImage);
+					var divCreation2 = $('<div class="col-xs-12 col-md-2"></div>').html([articleTitle, tally]);
 
 				$('#row'+innerCount).append([divCreation1, divCreation2]);
 				count += 1;
-				
+
 				})();
 
 				}
 
 			})();
 		});
-	}
 
 });
 

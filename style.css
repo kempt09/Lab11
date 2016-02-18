@@ -11,13 +11,18 @@ h1 {
   display: inline-block;
   text-decoration: none;
   font-size: 16px;
-  color: #00f;
+  color: #00008b;
+  text-shadow: 0 0 2px #add8e6;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
 }
-.damageControl:hover,
-.damageControl:active,
+.damageControl:hover {
+  text-decoration: none;
+  color: #add8e6;
+}
 .damageControl:visited {
   text-decoration: none;
-  color: #00f;
+  color: #f00;
 }
 #row1,
 #row2,
@@ -26,11 +31,10 @@ h1 {
 #row5 {
   margin: 25px auto;
 }
-p {
-  display: inline-block;
-  margin: 0;
-}
 #refresh {
   padding-top: 10px;
   margin-right: 20px;
+}
+.articleTitle {
+  color: #add8e6;
 }
