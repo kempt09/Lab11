@@ -37,6 +37,7 @@ $(function(){
 				count += 1;
 				console.log(articleTitle);
 
+
 			})();
 
 			}
