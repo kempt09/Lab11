@@ -29,14 +29,14 @@ $(function(){
 				var articleTitle = $("<a class='damageControl' href='"+ url +"'><h3 class='articleTitle'></h3></a>").text(title);
 				var articleImage = $("<img class='damageControl' />").attr('src', thumbnail);
 
-				 //var divCreation1 = $('<div class="col-xs-'+ bootSize+ ' artBlock"></div>').html([articleTitle,articleImage, tally]);
+				 var divCreation1 = $('<div class="col-xs-'+ bootSize+ ' artBlock"></div>').html([articleTitle,articleImage, tally]);
 				// // var divCreation2 = $('<div class="col-xs-'+ bootSize+ '"></div>').html([articleTitle, tally]);
 
 
-					var divCreation1 = $('<div class="col-xs-12 col-md-2"></div>').html(articleImage);
-					var divCreation2 = $('<div class="col-xs-12 col-md-2"></div>').html([articleTitle, tally]);
+					// var divCreation1 = $('<div class="col-xs-12 col-md-2"></div>').html(articleImage);
+					// var divCreation2 = $('<div class="col-xs-12 col-md-2"></div>').html([articleTitle, tally]);
 
-				$('#row'+innerCount).append([divCreation1, divCreation2]);
+				$('#row'+innerCount).append(divCreation1);
 				count += 1;
 
 				})();
