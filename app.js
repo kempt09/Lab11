@@ -5,6 +5,7 @@ $(function(){
 		var titlesPerRow = 3;
 		var numberOfArticle = 12;
 		var bootSize = (6/titlesPerRow).toString();
+		console.log(content.data.children[0]);
 		
 		
 
@@ -21,10 +22,11 @@ $(function(){
 
 
 
+
 			var articleTitle = $("<a class='damageControl' href='"+ url +"'><h3 class='articleTitle'></h3></a>").text(title);
 			var articleImage = $("<img class='damageControl' />").attr('src', thumbnail);
-			var divCreation1 = $('<div class="col-xs-'+ bootSize+ '"></div>').html(articleImage);
-			var divCreation2 = $('<div class="col-xs-'+ bootSize+ '"></div>').html(articleTitle);
+			var divCreation1 = $('<div class="col-xs-'+ bootSize+ ' artIMG"></div>').html(articleImage);
+			var divCreation2 = $('<div class="col-xs-'+ bootSize+ ' artCONTENT"></div>').html(articleTitle);
 			
 
 
