@@ -11,6 +11,11 @@ $(function(){
 			var title = content.data.children[i].data.title;
 			var thumbnail = content.data.children[i].data.thumbnail;
 			var url = content.data.children[i].data.url;
+			var author = content.data.children[i].data.author;
+			var score = content.data.children[i].data.score;
+			var comments = content.data.children[i].data.score
+	
+			console.log(comments);
 
 
 			var articleTitle = $("<a class='damageControl' href='"+ url+"'><h3 class='articleTitle'></h3></a>").text(title);
