@@ -3,7 +3,7 @@ $(function(){
 	$.get('https://www.reddit.com/r/aww/.json', function(content){
 		var count = 0;
 		var innerCount = 0;
-		var titlesPerRow = 3;
+		var titlesPerRow = 1;
 		var numberOfArticle = 12;
 		var bootSize = (6/titlesPerRow).toString();
 		console.log(content.data.children[0]);
