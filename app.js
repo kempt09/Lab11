@@ -2,10 +2,11 @@ $(function(){
 	$.get('https://www.reddit.com/r/aww/.json', function(content){
 		var count = 0;
 		var innerCount = 0;
-		var titlesPerRow = 2;
+		var titlesPerRow = 3;
 		var bootSize = (6/titlesPerRow).toString();
 		
 		
+
 		for(var i = 0; i<10 ; i++){
 			if (count % titlesPerRow ===0 || count === 0) {
 				innerCount += 1;
