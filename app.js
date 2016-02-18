@@ -4,7 +4,7 @@ $(function(){
 		var innerCount = 0;
 		
 		
-		for(var i = 0; i<10 ; i++){
+		for(var i = 0; i<12 ; i++){
 			if (count % 3 ===0 || count === 0) {
 				innerCount += 1;
 			}
