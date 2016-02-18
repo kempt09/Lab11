@@ -1,4 +1,5 @@
 $(function(){
+	
 	$.get('https://www.reddit.com/r/aww/.json', function(content){
 		var count = 0;
 		var innerCount = 0;
@@ -7,12 +8,14 @@ $(function(){
 		var bootSize = (6/titlesPerRow).toString();
 		console.log(content.data.children[0]);
 		
-		
+	
 
 		for(var i = 0; i<numberOfArticle ; i++){
 			if (count % titlesPerRow ===0 || count === 0) {
 				innerCount += 1;
 			};
+
+
 			var title = content.data.children[i].data.title;
 			var thumbnail = content.data.children[i].data.thumbnail;
 			var url = content.data.children[i].data.url;
@@ -27,7 +30,7 @@ $(function(){
 			var articleImage = $("<img class='damageControl' />").attr('src', thumbnail);
 			var divCreation1 = $('<div class="col-xs-'+ bootSize+ ' artIMG"></div>').html(articleImage);
 			var divCreation2 = $('<div class="col-xs-'+ bootSize+ ' artCONTENT"></div>').html(articleTitle);
-			
+
 
 
 			$('#row'+innerCount).append([divCreation1, divCreation2]);
